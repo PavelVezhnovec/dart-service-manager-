@@ -6,3 +6,79 @@
 @import "base/general";
 @import "../blocks/modules";
 
+$white-color: #ffffff;
+$blue-color: #061e37;
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.wrap {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-main {
+    background-image: url(../img/bg-main.png);
+   
+}
+
+.main {
+    display: flex;
+    color: $white-color;
+    h1 {
+        font-size: 55px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.header {
+    display: flex;
+    max-width: 1450px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 81px 174px 81px;
+    &__logo {
+        display: block;
+        background-image: url(../img/dart.svg);
+        width: 144px;
+        height: 33px;
+        background-repeat: no-repeat;
+        
+    }
+    &-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        padding-right: 100px;
+        
+        &__item {
+            margin-left: 50px;
+            
+        }
+        &__link {
+            color: $white-color;
+            text-decoration: none;
+            &:hover {
+                color: $blue-color;
+            }
+        }
+    }
+}
+
+.main-text {
+    display: flex;
+    video {
+        border-radius: 5px;
+    }
+    &__btn {
+        display: block;
+    }
+}
+
